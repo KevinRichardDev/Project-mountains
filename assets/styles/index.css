@@ -21,12 +21,40 @@ li {
   list-style: none;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: rgb(243, 243, 243);
 }
 
 body {
   background: url(../img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: merri, serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
 }
 
 img {
