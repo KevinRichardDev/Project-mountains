@@ -64,6 +64,10 @@ main {
     grid-template-columns: 50% 50%;
     border-top: 1px solid $grey1;
 
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
     .left-part,
     .right-part {
       padding: 60px;

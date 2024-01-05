@@ -299,6 +299,11 @@ main .section2 {
   grid-template-columns: 50% 50%;
   border-top: 1px solid rgb(209, 209, 209);
 }
+@media screen and (max-width: 700px) {
+  main .section2 {
+    grid-template-columns: 1fr;
+  }
+}
 main .section2 .left-part,
 main .section2 .right-part {
   padding: 60px;
