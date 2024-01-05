@@ -6,6 +6,10 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
 
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
   form {
     display: grid;
     gap: 18px;
@@ -40,11 +44,22 @@ footer {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 
+    div:nth-child(1){
+      @media screen and (max-width: 900px) {
+        border-top: 1px solid $grey1;
+        padding-bottom: 20px;
+      }
+    }
+
     div {
       border-bottom: 1px solid $grey1;
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 45% 55%;
+      }
 
       h3 {
         @include title;
@@ -75,6 +90,11 @@ footer {
           align-items: center;
           justify-content: center;
           cursor: pointer;
+
+          @media screen and (max-width: 450px) {
+            height: 25px;
+            width: 25px;
+          }
         }
       }
     }

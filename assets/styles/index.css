@@ -339,6 +339,11 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
 footer form {
   display: grid;
   gap: 18px;
@@ -381,6 +386,12 @@ footer .infos-contact {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
 }
+@media screen and (max-width: 900px) {
+  footer .infos-contact div:nth-child(1) {
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-bottom: 20px;
+  }
+}
 footer .infos-contact div {
   border-bottom: 1px solid rgb(209, 209, 209);
   display: grid;
@@ -388,6 +399,11 @@ footer .infos-contact div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 900px) {
+  footer .infos-contact div {
+    grid-template-columns: 45% 55%;
+  }
 }
 footer .infos-contact div h3 {
   font-family: inter-bold, sans-serif;
@@ -426,4 +442,10 @@ footer .infos-contact .social ul li {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  footer .infos-contact .social ul li {
+    height: 25px;
+    width: 25px;
+  }
 }/*# sourceMappingURL=index.css.map */
