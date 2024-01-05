@@ -5,4 +5,30 @@
 @font-face {
   font-family: "merri";
   src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: rgb(243, 243, 243);
+}
+
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+}
+
+img {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
