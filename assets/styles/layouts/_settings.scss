@@ -61,3 +61,17 @@ body {
     }
   }
 }
+.btn {
+  background: none;
+  border: 2px solid $black1;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  @include title;
+  transition: 0.2s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+}
