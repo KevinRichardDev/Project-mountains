@@ -16,7 +16,8 @@ main {
       position: relative;
       display: block;
 
-      &:before, &:after {
+      &:before,
+      &:after {
         content: "";
         position: absolute;
         width: 37%;
@@ -59,7 +60,8 @@ main {
     grid-template-columns: 50% 50%;
     border-top: 1px solid $grey1;
 
-    .left-part, .right-part {
+    .left-part,
+    .right-part {
       padding: 60px;
 
       span {
