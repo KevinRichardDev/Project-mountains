@@ -279,6 +279,11 @@ main .section1 h2 {
   text-transform: uppercase;
   font-size: 3rem;
 }
+@media screen and (max-width: 700px) {
+  main .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
 main .section1 p {
   width: 60%;
   margin: 30px auto;
